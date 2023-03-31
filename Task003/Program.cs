@@ -8,5 +8,15 @@
 
 Console.Clear();
 
+Console.WriteLine("Введите число:");
+
+double cube = double.Parse(Console.ReadLine());
+
+for (double i = 1; i < cube; i++)
+{
+  Console.Write($"{(Math.Pow(i, 3))}, ");
+}
+Console.Write(Math.Pow(cube, 3));
+
 
 
